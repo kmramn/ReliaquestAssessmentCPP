@@ -25,3 +25,16 @@ std::wstring parseKeyValue(const std::wstring& input, const std::wstring& key) {
         return L"";
 }
 
+std::wstring convertToWString(const char* szInput)
+{
+    if (!szInput) return L"";
+
+    size_t len = std::mbstowcs(nullptr, szInput, 0);
+    if (len == static_cast<size_t>(-1)) {
+        throw std::runtime_error("Conversion failed: invalid multibyte sequence");
+    }
+
+    std::wstring wszOutput(len, L'\0');
+    std::mbstowcs(&wszOutput[0], szInput, len);
+    return wszOutput;
+}

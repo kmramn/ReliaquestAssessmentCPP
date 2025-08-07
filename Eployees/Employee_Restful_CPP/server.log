@@ -1,0 +1,8 @@
+2025-08-07 17:51:55 The Server started listening!
+2025-08-07 17:51:55 Exception: Address 'http://localhost:8080/api/v1/employee' is already in use
+2025-08-07 17:52:15 The Server started listening!
+2025-08-07 17:52:22 method::GET - path
+2025-08-07 17:52:22 vector: 
+2025-08-07 17:52:22 map: 
+2025-08-07 17:52:22 Reply 200.
+2025-08-07 17:52:40 Shutting down the server...!

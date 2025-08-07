@@ -138,6 +138,7 @@
   <ItemGroup>
     <ClCompile Include="EmployeeHandler.cpp" />
     <ClCompile Include="EmployeeManager.cpp" />
+    <ClCompile Include="logger.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -148,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="EmployeeHandler.h" />
     <ClInclude Include="EmployeeManager.h" />
+    <ClInclude Include="logger.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Util.h" />
   </ItemGroup>

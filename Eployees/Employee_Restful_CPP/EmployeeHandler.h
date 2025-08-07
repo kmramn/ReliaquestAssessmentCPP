@@ -2,6 +2,7 @@
 
 class EmployeeHandler
 {
+	std::mutex m_handlerMutex;
 	EmployeeManager& m_employeeHandler;
 public:
 	EmployeeHandler(EmployeeManager& employeeHandler) : m_employeeHandler(employeeHandler)
